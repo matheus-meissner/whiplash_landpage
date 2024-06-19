@@ -1,0 +1,92 @@
+.plans {
+    padding: 5.6vw;
+
+    h2 {
+        text-align: center;
+
+        @media (min-width: 769px) and (max-width: 1023px) {
+            margin-top: 50px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+        
+        @media (max-width: 768px) {
+            display: block;
+        }
+
+        @media (min-width: 769px) and (max-width: 1023px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        @media (min-width: 1024px) and (max-width: 1366px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .button {
+            margin-top: 24px;
+        }
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 60px 44px 44px;
+            max-width: 380px;
+            width: 100%;
+
+            &:nth-child(2) {
+                background-image: url(../images/fundo_combo_plus.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+
+            img {
+                height: 83px;
+
+                @media (max-width: 768px) {
+                    
+                }
+
+                @media (min-width: 769px) and (max-width: 1023px) {
+                    height: 120px;
+                }
+
+                @media (min-width: 1024px) and (max-width: 1366px) {
+                    height: 120px;
+                }
+            }
+
+            strong {
+                display: block;
+                margin-top: 24px;
+
+                @media (min-width: 769px) and (max-width: 1023px) {
+                    margin-bottom: 12px;
+                }
+
+                @media (min-width: 1024px) and (max-width: 1366px) {
+                    margin-bottom: 24px;
+                }
+            }
+        }
+
+    }
+
+    p {
+        text-align: center;
+    }
+}

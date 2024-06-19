@@ -1,0 +1,127 @@
+@use 'variaveis';
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: variaveis.$corDeFundo;
+    transition: background-color .5s ease;
+    z-index: 1;
+
+    &--is-hidden {
+        background-color: transparent;
+        transition: background-color .5s ease;
+
+        .header {
+            &__logo, &__links__item:first-child {
+                opacity: 0;
+                visibility: hidden;
+                transition: opacity .5s ease;
+            }
+        }
+    }
+
+    &__container {
+        padding: 8px 36px;
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 768px) {
+            padding: 0px 12px 0px 20px;
+        }
+
+        @media (min-width: 769px) and (max-width: 1023px) {
+            padding: 10px 12px 0px 20px;
+        }
+
+        @media (min-width: 1024px) and (max-width: 1366px) {
+            padding: 12px 17px 0px 25px;
+        }
+    }
+    &__logo {
+        max-width: 80px;
+        width: 100%;
+        margin: 5px;
+        transition: opacity .5s ease;
+
+        @media (max-width: 768px) {
+            max-width: 64px;
+        }
+
+        @media (min-width: 769px) and (max-width: 1023px) {
+            max-width: 90px;
+        }
+
+        @media (min-width: 1024px) and (max-width: 1366px) {
+            max-width: 110px;
+        }
+    }
+    &__links {
+        display: flex;
+
+        &__item{
+            margin: 5px;
+            list-style: none;
+            transition: opacity .5s ease;
+        }
+    }
+}
+
+.button-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 16px;
+    color: variaveis.$corTextoSecundario;
+    background-color: variaveis.$corBotaoPrimario;
+    text-transform: uppercase;
+    border-radius: 4px;
+    margin: 0;
+    cursor: pointer;
+    padding: 8px 14px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border: 1px solid variaveis.$corBotaoPrimario;
+    height: 40px;
+
+    @media (max-width: 768px) {
+        font-size: 13px;
+        padding: 8px 11px;
+        height: 35px;
+        letter-spacing: 0;
+    }
+
+    @media (min-width: 769px) and (max-width: 1023px) {
+        font-size: 18px;
+        padding: 8px 11px;
+        height: 44px;
+        letter-spacing: 1;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1366px) {
+        font-size: 18px;
+        padding: 16px 11px;
+        height: 46px;
+        letter-spacing: 1;
+    }
+
+    &--secondary {
+        background-color: variaveis.$corBotaoSecundario;
+        border: 1px solid variaveis.$corBotaoSecundario;
+        
+        &:hover {
+            background-color: lighten($color: variaveis.$corBotaoSecundario, $amount: 3%);
+        }
+    }
+
+    &--dark {
+        background-color: rgba(variaveis.$corBotaoDark, $alpha: 0.8);
+        border: 1px solid variaveis.$corTextoSecundario;
+
+        &:hover {
+            background-color: variaveis.$corTextoSecundario;
+            color: variaveis.$corDeFundo;
+        }
+    }
+}
