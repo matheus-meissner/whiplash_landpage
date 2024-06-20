@@ -72,6 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const botao4 = document.getElementById('botao4');
     const botao5 = document.getElementById('botao5');
     const botao6 = document.getElementById('botao6');
+    const botao7 = document.getElementById('botao7');
     const hover1 = document.getElementById('hover1');
     const hover2 = document.getElementById('hover2');
     const hover3 = document.getElementById('hover3');
@@ -126,6 +127,14 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     botao6.addEventListener('mouseover', function () {
         hover3.play();
+    });
+
+    // Sons botão 6 PLATAFORMA
+    botao7.addEventListener('click', function () {
+        bumboSound.play();
+    });
+    botao7.addEventListener('mouseover', function () {
+        hover2.play();
     });
 
     // Sons botões bumbo
