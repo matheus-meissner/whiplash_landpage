@@ -222,8 +222,47 @@ button {
 }
 
 #netflix_logo {
-    height: 55px;
+    height: 47px;
+
+    @media (max-width: 768px) {
+        height: 35px;
+    }
+
+    @media (min-width: 769px) and (max-width: 1023px) {
+        height: 45px;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1366px) {
+        height: 47px;
+    }
 }
 #youtube_logo {
-    height: 85px;
+    height: 90px;
+
+    @media (max-width: 768px) {
+        height: 68px;
+    }
+
+    @media (min-width: 769px) and (max-width: 1023px) {
+        height: 85px;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1366px) {
+        height: 90px;
+    }
+}
+#prime_logo {
+    height: 80px;
+
+    @media (max-width: 768px) {
+        height: 60px;
+    }
+
+    @media (min-width: 769px) and (max-width: 1023px) {
+        height: 70px;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1366px) {
+        height: 80px;
+    }
 }
