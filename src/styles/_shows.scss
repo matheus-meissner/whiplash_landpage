@@ -3,6 +3,17 @@
 .shows {
     padding: 2vw 5.6vw;
     min-height: 50vw;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 50px;
+        margin-top: 77.56px;
+
+        @media (min-width: 769px) and (max-width: 1023px) {
+            margin-top: 50px;
+        }
+    }
+
     &__list {
         margin-top: 44px;
         display: none;

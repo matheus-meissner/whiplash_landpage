@@ -64,3 +64,37 @@ function escondeTodasAbas() {
         tabsContainer[i].classList.remove('shows__list--is-active');
     }
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    const botao1 = document.getElementById('botao1');
+    const botao2 = document.getElementById('botao2');
+    const botao3 = document.getElementById('botao3');
+    const clickSound = document.getElementById('clickSound');
+    const hover1 = document.getElementById('hover1');
+    const hover2 = document.getElementById('hover2');
+    const hover3 = document.getElementById('hover3');
+
+    // Sons botão 1 HERO
+    botao1.addEventListener('click', function () {
+        clickSound.play();
+    });
+    botao1.addEventListener('mouseover', function () {
+        hover1.play();
+    });
+
+    // Sons botão 2 HERO
+    botao2.addEventListener('click', function () {
+        clickSound.play();
+    });
+    botao2.addEventListener('mouseover', function () {
+        hover2.play();
+    });
+
+    // Sons botão 3 HERO
+    botao3.addEventListener('click', function () {
+        clickSound.play();
+    });
+    botao3.addEventListener('mouseover', function () {
+        hover3.play();
+    });
+});

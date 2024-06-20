@@ -3,21 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clone Disney+</title>
+    <title>Whiplash</title>
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
     <header class="header header--is-hidden">
         <div class="header__container">
             <h1>
-                <img src="./dist/images/disneyplus.svg" alt="Disney+" class="header__logo">
+                <img src="./dist/images/whiplash.png" alt="Whiplash" class="header__logo">
             </h1>
             <ul class="header__links">
                 <li class="header__links__item">
-                    <a href="#" class="button-header button-header--secondary hidden">Assine Agora</a>
-                </li>
-                <li class="header__links__item">
-                    <a href="#" class="button-header button-header--dark">Entrar</a>
+                    <a href="#" class="button-header button-header--secondary hidden">Assista Agora</a>
                 </li>
             </ul>
         </div>
@@ -41,21 +38,46 @@
                 <li class="hero__content__combos__combo">
                     <img src="./dist/images/logos/netflix_logo.png" alt="Netflix">
                     <a href="https://www.netflix.com/br/title/70299275?source=35" target="_blank">
-                        <button class="button">Assista Agora</button>
+                        <button class="button" id="botao1">Assista Agora</button>
+                        <!-- Audio element -->
+                        <audio id="clickSound">
+                            <source src="./src/sounds/click.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <audio id="hover1">
+                            <source src="./src/sounds/hover1.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
                     </a>
                     <span class="text">Somente por assinatura*</span>
                 </li>
                 <li class="hero__content__combos__combo">
                     <img src="./dist/images/logos/youtube_logo.png" alt="Youtube">
                     <a href="https://www.youtube.com/watch?v=Wg4a0yDCXiA" target="_blank">
-                        <button class="button">Assista Agora</button>
+                        <button class="button" id="botao2">Assista Agora</button>
+                        <audio id="clickSound">
+                            <source src="./src/sounds/click.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <audio id="hover2">
+                            <source src="./src/sounds/hover2.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
                     </a>
                     <span class="text">R$:7,90/alugar* R$:24,90/comprar*</span>
                 </li>
                 <li class="hero__content__combos__combo">
                     <img src="./dist/images/logos/prime_logo.png" alt="Prime Video">
                     <a href="https://www.primevideo.com/dp/amzn1.dv.gti.32a9f723-90af-f85a-fc6d-28895dd925f7?autoplay=0&ref_=atv_cf_strg_wb" target="_blank">
-                        <button class="button">Assista Agora</button>
+                        <button class="button" id="botao3">Assista Agora</button>
+                        <audio id="clickSound">
+                            <source src="./src/sounds/click.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <audio id="hover3">
+                            <source src="./src/sounds/hover3.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
                     </a>
                     <span class="text">R$:11,90/alugar* R$:24,90/comprar*</span>
                 </li>
@@ -66,6 +88,9 @@
         </div>
     </section>
     <section class="shows">
+        <h2 class="title--big">
+            Personagens
+        </h2>
         <nav class="shows__tabs">
             <button data-tab-button="em_breve" class="shows__tabs__button shows__tabs__button--is-active">
                 Em Breve
@@ -149,7 +174,7 @@
                 <p class="text--big">
                     No Disney+ você encontra as últimas estreias do cinema, originais e clássicos inesquecíveis.
                 </p>
-                <button class="button">Assine Agora</button>
+                <button class="button">Assista Agora</button>
             </li>
             <li class="plans__list__item">
                 <img src="./dist/images/logos/disney_star_plus_sm.png" alt="Disney+, Star+, Combo +">
@@ -157,7 +182,7 @@
                 <p class="text--big">
                     Assine o Disney+ e o Star+ juntos. Economize e aproveite agora os dois serviços por um preço único.
                 </p>
-                <button class="button">Assine Agora</button>
+                <button class="button">Assista Agora</button>
             </li>
             <li class="plans__list__item">
                 <img src="./dist/images/logos/disney_star_plus_starzplay_underline.png" alt="Disney+, Star+, StarZ Play">
@@ -165,7 +190,7 @@
                 <p class="text--big">
                     Disney+, Star+ e STARZPLAY em um plano especial. Assine agora os três serviços juntos.
                 </p>
-                <button class="button">Assine Agora</button>
+                <button class="button">Assista Agora</button>
             </li>
         </ul>
         <p class="text--small">
@@ -307,7 +332,7 @@
     </section>
     <footer class="footer">
         <div class="footer__container">
-            <img src="./dist/images/disneyplus.svg" alt="Disney+" class="footer__logo">
+            <img src="./dist/images/whiplash.png" alt="Whiplash" class="footer__logo">
             <ul class="footer__links">
                 <li class="footer__links__item">
                     <div class="language-selector">
