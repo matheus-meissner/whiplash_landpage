@@ -14,7 +14,7 @@
             </h1>
             <ul class="header__links">
                 <li class="header__links__item">
-                    <a href="#" class="button-header button-header--secondary hidden">Assista Agora</a>
+                    <a href="#plataforma" class="button-header button-header--secondary hidden">Assista Agora</a>
                 </li>
             </ul>
         </div>
@@ -83,7 +83,7 @@
                 </li>
             </ul>
             <p class="text--small">
-                *Cheque o catálogo da sua plataforma de streaming antes de alugar ou comprar.
+                *Verifique o catálogo da sua plataforma de streaming antes de alugar ou comprar.
             </p>
         </div>
     </section>
@@ -115,11 +115,11 @@
             <li class="shows__list__item">
                 <img src="./dist/images/personagens/andrew_neiman.jpg" alt="Andrew Neiman">
                 <div class="shows__list__item__texto">
-                    <h3 class="text">
-                        teste
-                    </h3>
-                    <p class="text--small">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia asperiores rerum eos, fuga consectetur voluptatem libero adipisci non, inventore totam sint voluptas, nesciunt quasi. Nobis laborum quidem doloribus cumque molestiae?
+                    <h2 class="title">
+                        Andrew Neiman
+                    </h2>
+                    <p class="text--big">
+                        Andrew é um baterista do primeiro ano no Conservatório Shaffer, sonha em ser um dos maiores bateristas da história, inspirado por Buddy Rich. Ao ser convidado para tocar na banda de jazz dirigida pelo rigoroso e abusivo Terence Fletcher, sua motivação cresce ainda mais. Andrew é altamente motivado e ambicioso.
                     </p>
                 </div>
             </li>
@@ -127,78 +127,95 @@
         <ul data-tab-id="terence" class="shows__list">
             <li class="shows__list__item">
                 <img src="./dist/images/personagens/terence_fletcher.jpg" alt="Terence Fletcher">
+                <div class="shows__list__item__texto">
+                    <h2 class="title">
+                        Terence Fletcher
+                    </h2>
+                    <p class="text--big">
+                        Terence, um infame professor do Conservatório Shaffer, recruta Andrew para sua banda de jazz e é conhecido por suas táticas brutais de ensino. Mesquinho e agressivo, Fletcher não considera seus métodos abusivos, mas justifica suas táticas brutais como um meio de impulsionar os alunos a melhorar, acreditando que quanto mais ele os magoa e humilha, mais motivados eles ficam para se superar.
+                    </p>
+                </div>
             </li>
         </ul>
         <ul data-tab-id="nicole" class="shows__list">
             <li class="shows__list__item">
                 <img src="./dist/images/personagens/nicole.jpg" alt="Nicole">
+                <div class="shows__list__item__texto">
+                    <h2 class="title">
+                        Nicole
+                    </h2>
+                    <p class="text--big">
+                        Nicole, uma estudante de Fordham, trabalha no cinema que Andrew frequenta. Ela apresenta um papel fundamental no decorrer da história dando ênfase aos objetivos de Andrew.
+                    </p>
+                </div>
             </li>
         </ul>
         <ul data-tab-id="ryan" class="shows__list">
             <li class="shows__list__item">
                 <img src="./dist/images/personagens/ryan.jpg" alt="Ryan">
+                <div class="shows__list__item__texto">
+                    <h2 class="title">
+                        Ryan
+                    </h2>
+                    <p class="text--big">
+                        O Ryan é outro baterista do primeiro ano na Shaffer. Andrew considera-o menos talentoso do que ele, mas o conflito promovido por Fletcher pode provar o contrário.
+                    </p>
+                </div>
             </li>
         </ul>
         <ul data-tab-id="jim" class="shows__list">
             <li class="shows__list__item">
                 <img src="./dist/images/personagens/jim_neiman.jpg" alt="Jim Neiman">
+                <div class="shows__list__item__texto">
+                    <h2 class="title">
+                        Jim Neiman
+                    </h2>
+                    <p class="text--big">
+                        Jim é o pai de Andrew, um professor do liceu que apoia e é gentil com o seu filho. Em muitos aspectos, ele é o contraponto de Fletcher, dando a Andrew amor e afirmação. Andrew é condescendente com o pai em vários momentos por não ser um artista.
+                    </p>
+                </div>
             </li>
         </ul>
     </section>
-    <section class="plans">
+    <section class="plans" id="plataforma">
         <h2 class="title--big">
-            Escolha seu plano
+            Escolha sua plataforma
         </h2>
         <ul class="plans__list">
             <li class="plans__list__item">
-                <img src="./dist/images/logos/disneyplus_underline.png" alt="Disney+">
-                <strong class="title--small">R$:27,90/mês*</strong>
+                <img src="./dist/images/logos/netflix_logo.png" alt="Netflix" id="netflix_logo">
+                <strong class="title--small">R$:44,90/mês*</strong>
                 <p class="text--big">
-                    No Disney+ você encontra as últimas estreias do cinema, originais e clássicos inesquecíveis.
+                    O valor da assinatura pode variar de acordo com o plano escolhido.
                 </p>
-                <button class="button">Assista Agora</button>
+                <a href="https://www.netflix.com/br/title/70299275?source=35" target="_blank">
+                    <button class="button" id="botao4">Assista Agora</button>
+                </a>
             </li>
             <li class="plans__list__item">
-                <img src="./dist/images/logos/disney_star_plus_sm.png" alt="Disney+, Star+, Combo +">
-                <strong class="title--small">R$:45,90/mês*</strong>
+                <img src="./dist/images/logos/logo_yt_branco.png" alt="YouTube" id="youtube_logo">
+                <strong class="title--small">R$:24,90/comprar*</strong>
                 <p class="text--big">
-                    Assine o Disney+ e o Star+ juntos. Economize e aproveite agora os dois serviços por um preço único.
+                    Caso prefira alugar o filme pela plataforma o valor é de R$:7,90.
                 </p>
-                <button class="button">Assista Agora</button>
+                <a href="https://www.youtube.com/watch?v=Wg4a0yDCXiA" target="_blank">
+                    <button class="button" id="botao5">Assista Agora</button>
+                </a>
             </li>
             <li class="plans__list__item">
-                <img src="./dist/images/logos/disney_star_plus_starzplay_underline.png" alt="Disney+, Star+, StarZ Play">
-                <strong class="title--small">R$:55,90/mês*</strong>
+                <img src="./dist/images/logos/prime_logo_branco.png" alt="Amazon Prime">
+                <strong class="title--small">R$:24,90/comprar*</strong>
                 <p class="text--big">
-                    Disney+, Star+ e STARZPLAY em um plano especial. Assine agora os três serviços juntos.
+                    Caso prefira alugar o filme pela plataforma o valor é de R$:11,90.
                 </p>
-                <button class="button">Assista Agora</button>
+                <a href="https://www.primevideo.com/dp/amzn1.dv.gti.32a9f723-90af-f85a-fc6d-28895dd925f7?autoplay=0&ref_=atv_cf_strg_wb" target="_blank">
+                    <button class="button" id="botao6">Assista Agora</button>
+                </a>
             </li>
         </ul>
         <p class="text--small">
-            *O preço pode variar caso a assinatura seja feita através de outras plataformas.
+            *Verifique o catálogo da sua plataforma de streaming antes de alugar ou comprar.
         </p>
-    </section>
-    <section class="image-text-section">
-        <img src="./dist/images/tv_pc_tablet_celular.png" alt="Imagem TV, PC, Tablet e Celular">
-        <div class="image-text-section__text_container">
-            <h2 class="title">Assista do seu jeito</h2>
-            <p class="text--big">
-                Aproveite a tela grande da TV ou assista no tablet, laptop, celular e outros aparelhos. Nossa seleção de títulos em 4K não para de crescer. Além disso, para a felicidade de todos, é possível assistir em até 4 telas ao mesmo tempo.
-            </p>
-        </div>
-    </section>
-    <section class="image-text-section image-text-section--image-full-width">
-        <picture>
-            <source media="(max-width: 768px)" srcset="./dist/images/fundo_rei_leao_celular.png"/>
-            <img src="./dist/images/fundo_rei_leao.png" alt="Rei Leão">
-        </picture>
-        <div class="image-text-section--image-full-width__text_container image-text-section__text_container">
-            <h2 class="title">Baixe filmes e séries</h2>
-            <p class="text--big">
-                Baixe e assista quando e onde quiser. Assim, seus favoritos estão sempre com você, até mesmo sem internet.
-            </p>
-        </div>
     </section>
     <section class="available-devices">
         <h2 class="title">Disponível nos seus dispositivos favoritos</h2>

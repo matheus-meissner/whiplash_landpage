@@ -39,6 +39,9 @@
 body {
     background-color: variaveis.$corDeFundo;
 }
+html {
+    scroll-behavior: smooth;
+}
 .text--big {
     @include text(18px);
 
@@ -216,4 +219,11 @@ button {
 .linkDesc {
     color: white;
     cursor: pointer;
+}
+
+#netflix_logo {
+    height: 55px;
+}
+#youtube_logo {
+    height: 85px;
 }

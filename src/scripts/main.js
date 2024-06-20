@@ -69,12 +69,16 @@ document.addEventListener('DOMContentLoaded', function () {
     const botao1 = document.getElementById('botao1');
     const botao2 = document.getElementById('botao2');
     const botao3 = document.getElementById('botao3');
-    const clickSound = document.getElementById('clickSound');
-    const bumboSound = document.getElementById('bumboSound');
+    const botao4 = document.getElementById('botao4');
+    const botao5 = document.getElementById('botao5');
+    const botao6 = document.getElementById('botao6');
     const hover1 = document.getElementById('hover1');
     const hover2 = document.getElementById('hover2');
     const hover3 = document.getElementById('hover3');
+
     const botoesBumbo = document.querySelectorAll('.botaoBumbo');
+    const clickSound = document.getElementById('clickSound');
+    const bumboSound = document.getElementById('bumboSound');
 
     // Sons botão 1 HERO
     botao1.addEventListener('click', function () {
@@ -97,6 +101,30 @@ document.addEventListener('DOMContentLoaded', function () {
         clickSound.play();
     });
     botao3.addEventListener('mouseover', function () {
+        hover3.play();
+    });
+
+    // Sons botão 4 PLATAFORMA
+    botao4.addEventListener('click', function () {
+        clickSound.play();
+    });
+    botao4.addEventListener('mouseover', function () {
+        hover1.play();
+    });
+
+    // Sons botão 5 PLATAFORMA
+    botao5.addEventListener('click', function () {
+        clickSound.play();
+    });
+    botao5.addEventListener('mouseover', function () {
+        hover2.play();
+    });
+
+    // Sons botão 6 PLATAFORMA
+    botao6.addEventListener('click', function () {
+        clickSound.play();
+    });
+    botao6.addEventListener('mouseover', function () {
         hover3.play();
     });
 

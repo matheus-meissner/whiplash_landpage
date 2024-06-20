@@ -17,7 +17,7 @@
     &__list {
         margin-top: 44px;
         display: none;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 24px;
 
         @media (max-width: 768px) {
@@ -25,13 +25,33 @@
         }
 
         &--is-active {
-            display: grid;
+            display: flex;
+            justify-content: center;
+            
         }
 
         &__item {
+            max-width: 50em;
+            padding: 1.8em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &__texto {
+                padding: 1em;
+                text-align: center;
+
+                h2 {
+                    margin: 0;
+                    margin-bottom: .8em;
+                    // text-align: start;
+                }
+            }
+
             img {
                 max-width: 100%;
                 border-radius: 4px;
+                margin-right: 36px;
             }
         }
     }
