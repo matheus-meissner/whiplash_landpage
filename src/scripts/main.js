@@ -70,9 +70,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const botao2 = document.getElementById('botao2');
     const botao3 = document.getElementById('botao3');
     const clickSound = document.getElementById('clickSound');
+    const bumboSound = document.getElementById('bumboSound');
     const hover1 = document.getElementById('hover1');
     const hover2 = document.getElementById('hover2');
     const hover3 = document.getElementById('hover3');
+    const botoesBumbo = document.querySelectorAll('.botaoBumbo');
 
     // Sons botão 1 HERO
     botao1.addEventListener('click', function () {
@@ -96,5 +98,12 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     botao3.addEventListener('mouseover', function () {
         hover3.play();
+    });
+
+    // Sons botões bumbo
+    botoesBumbo.forEach(function(botao) {
+        botao.addEventListener('click', function () {
+            bumboSound.play();
+        });
     });
 });
