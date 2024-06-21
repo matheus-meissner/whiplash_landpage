@@ -236,6 +236,21 @@ button {
         height: 47px;
     }
 }
+#netflix_logo_hero {
+    height: 37px;
+
+    @media (max-width: 768px) {
+        height: 25px;
+    }
+
+    @media (min-width: 769px) and (max-width: 1023px) {
+        height: 35px;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1366px) {
+        height: 37px;
+    }
+}
 #youtube_logo {
     height: 90px;
 
@@ -251,6 +266,21 @@ button {
         height: 90px;
     }
 }
+#youtube_logo_hero {
+    height: 80px;
+
+    @media (max-width: 768px) {
+        height: 58px;
+    }
+
+    @media (min-width: 769px) and (max-width: 1023px) {
+        height: 75px;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1366px) {
+        height: 80px;
+    }
+}
 #prime_logo {
     height: 80px;
 
@@ -264,5 +294,20 @@ button {
 
     @media (min-width: 1024px) and (max-width: 1366px) {
         height: 80px;
+    }
+}
+#prime_logo_hero {
+    height: 70px;
+
+    @media (max-width: 768px) {
+        height: 50px;
+    }
+
+    @media (min-width: 769px) and (max-width: 1023px) {
+        height: 60px;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1366px) {
+        height: 70px;
     }
 }
