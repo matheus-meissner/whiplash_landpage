@@ -12,7 +12,7 @@ Bem-vindo à **Whiplash Landing Page**! Este projeto é uma página inspirada no
 
 ## 🌐 Visão Geral
 
-A **Whiplash Landing Page** foi desenvolvida para proporcionar uma experiência visualmente impactante e informativa sobre o filme *Whiplash*. Com um design responsivo, a página se adapta bem a dispositivos móveis e desktops, entregando uma experiência cinematográfica para os fãs do filme.
+A **Whiplash Landing Page** foi desenvolvida para proporcionar uma experiência visualmente impactante e informativa sobre o filme *Whiplash*. Com um design responsivo, a página se adapta bem a dispositivos móveis e desktops, entregando uma experiência cinematográfica para os fãs do filme. Além disso, inclui sons de virada de bateria nos botões, tanto no hover quanto no clique, trazendo uma camada extra de imersão e interatividade.
 
 ## 🛠 Tecnologias Utilizadas
 
